@@ -4,7 +4,6 @@ class Student
   attr_accessor :id, :name, :grade
 
   def self.new_from_db(row)
-    binding.pry
     new_student = Student.new
     new_student.id = row[0]
     new_student.name = row[1]
